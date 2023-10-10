@@ -2,7 +2,7 @@
 
     [examples]
     - To view a single file
-    `\ncat file.txt`
+   cat file.txt
     - To view multiple files
     `cat file1.txt file2.txt`
     - To view contents of file preceding with line numbers
