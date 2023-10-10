@@ -1,9 +1,46 @@
 1. CAT(concatenate) command is very frequently used in Linux. It reads data from the file and gives its content as output.
 
     [example]
+
     To view a single file
     ```bash
-    # cat file.txt
+    cat file.txt
+    ```
+    To view multiple files
+    ```bash
+    cat file1.txt file2.txt
+    ```
+    To view contents of file preceding with line numbers
+    ```bash
+    cat -n file.txt
+    ```
+    Create file and add content
+    ```bash
+    cat > new_file.txt
+    ```
+    Copy the content of one file to another
+    ```bash
+    cat file_one.txt > file_two.txt
+    ```
+    Append content of one file to another
+    ```bash
+    cat file_one.txt >> file_two.txt
+    ```
+    Display content in reverse order
+    ```bash
+    tac file.txt
+    ```
+    Cat command to open dash files
+    ```bash
+    cat -- '-dashfile'
+    ```
+    Cat command to merge multiple files
+    ```bash
+    cat file1.txt file2.txt file3.txt > merged_filename
+    ```
+    Cat command to write on already existing file
+    ```bash
+    cat >> file.txt
     ```
 
     | Example        | Description    |
