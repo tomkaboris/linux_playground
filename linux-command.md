@@ -3,7 +3,9 @@
     [examples]
     | Example        | Description    |
     | -------------- | -------------- |
-    | ```cat file.txt``` | To view a single file |
+    | ```shell
+    cat file.txt
+    ``` | To view a single file |
     | ```cat file1.txt file2.txt``` | To view multiple files |
     | ```cat -n file.txt``` | To view contents of file preceding with line numbers | 
     | ```cat > new_file.txt``` | Create file and add content |
