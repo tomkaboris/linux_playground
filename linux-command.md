@@ -1,6 +1,9 @@
 1. CAT(concatenate) command is very frequently used in Linux. It reads data from the file and gives its content as output.
-
-    [examples]
+   
+    |Example           |Description             |
+    | -------------- | -------------- |
+    | `cat file.txt` | To view a single file |
+    |  |  |
     - To view a single file
     `cat file.txt`
     - To view multiple files
@@ -23,7 +26,7 @@
     `cat >> file.txt`
 
 
-2. GREP filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. 
+3. GREP filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. 
 
     [examples]
     - Case insensitive search
@@ -54,7 +57,7 @@
     `grep -R "Linux" file.txt`
 
 
-3. SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion.
+4. SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion.
 
     [examples]
     - Replacing or substituting string
@@ -79,7 +82,7 @@
     `sed '/command/d' file.txt`
 
 
-4. AWK is a scripting language used for manipulating data and generating reports.
+5. AWK is a scripting language used for manipulating data and generating reports.
 
     [examples]
     - Print the lines which match the given pattern.
@@ -98,7 +101,7 @@
     `awk 'length($0) > 10' file.txt`
 
 
-5. TOP command is used to show the Linux processes. It provides a dynamic real-time view of the running system.
+6. TOP command is used to show the Linux processes. It provides a dynamic real-time view of the running system.
 
     [examples]
     - With below command top command will automatically exit after 10 number of repetition
