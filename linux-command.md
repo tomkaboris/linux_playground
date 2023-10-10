@@ -1,9 +1,18 @@
 1. CAT(concatenate) command is very frequently used in Linux. It reads data from the file and gives its content as output.
+<<<<<<< HEAD
    
+=======
+
+    [examples]
+>>>>>>> 95239db (test)
     |Example           |Description             |
     | -------------- | -------------- |
     | `cat file.txt` | To view a single file |
     |  |  |
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 95239db (test)
     - To view a single file
     `cat file.txt`
     - To view multiple files
@@ -118,4 +127,9 @@
     - Press 'c' option in running top command, it will display absolute path of running process.
     - You can kill a process after finding PID of process by pressing 'k' option in running top command without exiting from top window as shown below.
     - Press (Shift+P) to sort processes as per CPU utilization.
+<<<<<<< HEAD
     - Press 'o' and search proces by any parametar that is given in top command.
+=======
+    - Press 'o' and search proces by any parametar that is given in top command.
+
+>>>>>>> 95239db (test)
