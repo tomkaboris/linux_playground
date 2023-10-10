@@ -3,16 +3,16 @@
     [examples]
     | Example        | Description    |
     | -------------- | -------------- |
-    | `cat file.txt` | To view a single file |
-    | `cat file1.txt file2.txt` | To view multiple files |
-    | `cat -n file.txt` | To view contents of file preceding with line numbers | 
-    | `cat > new_file.txt` | Create file and add content |
-    | `cat file_one.txt > file_two.txt` | Copy the content of one file to another |
-    | `cat file_one.txt >> file_two.txt` | Append content of one file to another |
-    | `tac file.txt` | Display content in reverse order |
-    | `cat -- "-dashfile"` | Cat command to open dash files |
-    | `cat "file1.txt" "file2.txt" "file3.txt" > "merged_filename"` | Cat command to merge multiple files |
-    | `cat >> file.txt` | Cat command to write on already existing file |
+    | ```cat file.txt``` | To view a single file |
+    | ```cat file1.txt file2.txt``` | To view multiple files |
+    | ```cat -n file.txt``` | To view contents of file preceding with line numbers | 
+    | ```cat > new_file.txt``` | Create file and add content |
+    | ```cat file_one.txt > file_two.txt``` | Copy the content of one file to another |
+    | ```cat file_one.txt >> file_two.txt``` | Append content of one file to another |
+    | ```tac file.txt``` | Display content in reverse order |
+    | ```cat -- "-dashfile"``` | Cat command to open dash files |
+    | ```cat "file1.txt" "file2.txt" "file3.txt" > "merged_filename"``` | Cat command to merge multiple files |
+    | ```cat >> file.txt``` | Cat command to write on already existing file |
 
 
 2. GREP filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. 
