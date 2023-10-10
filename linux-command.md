@@ -1,7 +1,7 @@
 1. CAT(concatenate) command is very frequently used in Linux. It reads data from the file and gives its content as output.
 
     [examples]
-    - To view a single file
+    - To view a single file \n
     `cat file.txt`
     - To view multiple files
     `cat file1.txt file2.txt`
