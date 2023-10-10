@@ -1,41 +1,21 @@
 1. CAT(concatenate) command is very frequently used in Linux. It reads data from the file and gives its content as output.
-<<<<<<< HEAD
-   
-=======
 
     [examples]
->>>>>>> 95239db (test)
-    |Example           |Description             |
+    | Example        | Description    |
     | -------------- | -------------- |
     | `cat file.txt` | To view a single file |
-    |  |  |
-<<<<<<< HEAD
-=======
-    
->>>>>>> 95239db (test)
-    - To view a single file
-    `cat file.txt`
-    - To view multiple files
-    `cat file1.txt file2.txt`
-    - To view contents of file preceding with line numbers
-    `cat -n file.txt`
-    - Create file and add content
-    `cat > new_file.txt`
-    - Copy the content of one file to another
-    `cat file_one.txt > file_two.txt`
-    - Append content of one file to another
-    `cat file_one.txt >> file_two.txt`
-    - Display content in teverse order
-    `tac file.txt`
-    - Cat command to open dash files
-    `cat -- "-dashfile"`
-    - Cat command to merge multiple files
-    `cat "file1.txt" "file2.txt" "file3.txt" > "merged_filename"`
-    - Cat command to write on already existing file
-    `cat >> file.txt`
+    | `cat file1.txt file2.txt` | To view multiple files |
+    | `cat -n file.txt` | To view contents of file preceding with line numbers | 
+    | `cat > new_file.txt` | Create file and add content |
+    | `cat file_one.txt > file_two.txt` | Copy the content of one file to another |
+    | `cat file_one.txt >> file_two.txt` | Append content of one file to another |
+    | `tac file.txt` | Display content in reverse order |
+    | `cat -- "-dashfile"` | Cat command to open dash files |
+    | `cat "file1.txt" "file2.txt" "file3.txt" > "merged_filename"` | Cat command to merge multiple files |
+    | `cat >> file.txt` | Cat command to write on already existing file |
 
 
-3. GREP filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. 
+2. GREP filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. 
 
     [examples]
     - Case insensitive search
@@ -66,7 +46,7 @@
     `grep -R "Linux" file.txt`
 
 
-4. SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion.
+3. SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion.
 
     [examples]
     - Replacing or substituting string
@@ -91,7 +71,7 @@
     `sed '/command/d' file.txt`
 
 
-5. AWK is a scripting language used for manipulating data and generating reports.
+4. AWK is a scripting language used for manipulating data and generating reports.
 
     [examples]
     - Print the lines which match the given pattern.
@@ -110,7 +90,7 @@
     `awk 'length($0) > 10' file.txt`
 
 
-6. TOP command is used to show the Linux processes. It provides a dynamic real-time view of the running system.
+5. TOP command is used to show the Linux processes. It provides a dynamic real-time view of the running system.
 
     [examples]
     - With below command top command will automatically exit after 10 number of repetition
@@ -127,9 +107,5 @@
     - Press 'c' option in running top command, it will display absolute path of running process.
     - You can kill a process after finding PID of process by pressing 'k' option in running top command without exiting from top window as shown below.
     - Press (Shift+P) to sort processes as per CPU utilization.
-<<<<<<< HEAD
-    - Press 'o' and search proces by any parametar that is given in top command.
-=======
     - Press 'o' and search proces by any parametar that is given in top command.
 
->>>>>>> 95239db (test)
