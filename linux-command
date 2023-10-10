@@ -1,5 +1,5 @@
 1. CAT(concatenate) command is very frequently used in Linux. It reads data from the file and gives its content as output.
-
+--------------------------------------------------------------------------------------------------------------------------
 - To view a single file
 cat file.txt
 
@@ -32,7 +32,7 @@ cat >> file.txt
 
 
 2. GREP filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern.
-
+------------------------------------------------------------------------------------------------------------------------
 - Case insensitive search
 grep -i "Linux" file.txt
 
@@ -60,19 +60,19 @@ grep "^Linux" file.txt
 - Matching the lines that end with a string
 grep "Linux$" file.txt
 
-| |
-| -------------- |
-| Specifies expression with -e option, canan use multiple times | 
+- Specifies expression with -e option, canan use multiple times
 grep –e "Linux" -e "Unix" -e "Command" file.txt
 
-| Print number of specific lines from a file [n lines after result] | 
-| Print number of specific lines from a file [n lines before result] |
-| Print number of specific lines from a file [n lines after and before result] |
+- Print number of specific lines from a file [n lines after result]
 grep -A[NumberOfLines(n)] Linux file.txt
+
+- Print number of specific lines from a file [n lines before result]
 grep -B[NumberOfLines(n)] Linux file.txt
+
+- Print number of specific lines from a file [n lines after and before result]
 grep -C[NumberOfLines(n)] Linux file.txt
 
-| Search recursively for a pattern in the directory
+- Search recursively for a pattern in the directory
 grep -R "Linux" file.txt
 
 
