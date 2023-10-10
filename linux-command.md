@@ -1,77 +1,54 @@
 1. CAT(concatenate) command is very frequently used in Linux. It reads data from the file and gives its content as output.
 
-    [examples]
     | Example        | Description    |
     | -------------- | -------------- |
-    | ```shell
-    cat file.txt
-    ``` | To view a single file |
-    | ```cat file1.txt file2.txt``` | To view multiple files |
-    | ```cat -n file.txt``` | To view contents of file preceding with line numbers | 
-    | ```cat > new_file.txt``` | Create file and add content |
-    | ```cat file_one.txt > file_two.txt``` | Copy the content of one file to another |
-    | ```cat file_one.txt >> file_two.txt``` | Append content of one file to another |
-    | ```tac file.txt``` | Display content in reverse order |
-    | ```cat -- "-dashfile"``` | Cat command to open dash files |
-    | ```cat "file1.txt" "file2.txt" "file3.txt" > "merged_filename"``` | Cat command to merge multiple files |
-    | ```cat >> file.txt``` | Cat command to write on already existing file |
+    | `cat file.txt` | To view a single file |
+    | `cat file1.txt file2.txt` | To view multiple files |
+    | `cat -n file.txt` | To view contents of file preceding with line numbers | 
+    | `cat > new_file.txt` | Create file and add content |
+    | `cat file_one.txt > file_two.txt` | Copy the content of one file to another |
+    | `cat file_one.txt >> file_two.txt` | Append content of one file to another |
+    | `tac file.txt` | Display content in reverse order |
+    | `cat -- "-dashfile"` | Cat command to open dash files |
+    | `cat "file1.txt" "file2.txt" "file3.txt" > "merged_filename"` | Cat command to merge multiple files |
+    | `cat >> file.txt` | Cat command to write on already existing file |
 
 
 2. GREP filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. 
 
-    [examples]
-    - Case insensitive search
-    `grep -i "Linux" file.txt`
-    - Displaying the count of number of matches
-    `grep -c "Linux" file.txt`
-    - Display the file names that matches the pattern
-    `grep -l "Linux" *`
-    - Checking for the whole words in a file
-    `grep -w "Linux" file.txt`
-    - Displaying only the matched pattern
-    `grep -o "Linux" file.txt`
-    - Show line number while displaying the output
-    `grep -n "Linux" file.txt`
-    - Display the lines that are not matched with the specified search string pattern
-    `grep -v "Linux" file.txt`
-    - Matching the lines that start with a string
-    `grep "^Linux" file.txt`
-    - Matching the lines that end with a string
-    `grep "Linux$" geekfile.txt`
-    - Specifies expression with -e option, canan use multiple times
-    `grep –e "Linux" -e "Unix" -e "Command" file.txt`
-    - Print number of specific lines from a file
-    `$grep -A[NumberOfLines(n)] Linux file.txt` # n lines after result
-    `$grep -B[NumberOfLines(n)] Linux file.txt` # n lines before result
-    `$grep -C[NumberOfLines(n)] Linux file.txt` # n lines after and before result
-    - Search recursively for a pattern in the directory
-    `grep -R "Linux" file.txt`
+    | Example        | Description    |
+    | -------------- | -------------- |
+    | `grep -i "Linux" file.txt` | Case insensitive search |
+    | `grep -c "Linux" file.txt` | Displaying the count of number of matches |
+    | `grep -l "Linux" *` | Display the file names that matches the pattern |
+    | `grep -w "Linux" file.txt` | Checking for the whole words in a file |
+    | `grep -o "Linux" file.txt` | Displaying only the matched pattern |
+    | `grep -n "Linux" file.txt` | Show line number while displaying the output |
+    | `grep -v "Linux" file.txt` | Display the lines that are not matched with the specified search string pattern |
+    | `grep "^Linux" file.txt` | Matching the lines that start with a string |
+    | `grep "Linux$" geekfile.txt` | Matching the lines that end with a string |
+    | `grep –e "Linux" -e "Unix" -e "Command" file.txt` | Specifies expression with -e option, canan use multiple times |
+    | `$grep -A[NumberOfLines(n)] Linux file.txt` | Print number of specific lines from a file [n lines after result] |
+    | `$grep -B[NumberOfLines(n)] Linux file.txt` | Print number of specific lines from a file [n lines before result] |
+    | `$grep -C[NumberOfLines(n)] Linux file.txt` | Print number of specific lines from a file [n lines after and before result] |
+    | `grep -R "Linux" file.txt` | Search recursively for a pattern in the directory |
 
 
 3. SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion.
 
-    [examples]
-    - Replacing or substituting string
-    `sed 's/unix/linux/' file.txt`
-    - Replacing the n occurrence of a pattern in a line. The below command replaces the second occurrence of the word “unix” with “linux” in a line. 
-    `sed 's/unix/linux/2' file.txt`
-    - Replacing all the occurrence of the pattern in a line
-    `sed 's/unix/linux/g' file.txt`
-    - Replacing string on a specific line number
-    `sed '3 s/unix/linux/' file.txt`
-    - Replacing string on a range of lines
-    `sed '1,3 s/unix/linux/' file.txt`
-    - Deleting particular line lines from a particular file
-    `sed '5d' file.txt`
-    - Delete a last line
-    `sed '$d' file.txt`
-    - To Delete line from range x to y
-    `sed '3,6d' file.txt`
-    - To Delete from n line to last line
-    `sed '12,$d' file.txt`
-    - To Delete pattern matching line
-    `sed '/command/d' file.txt`
-
+    | Example        | Description    |
+    | -------------- | -------------- |
+    | `sed 's/unix/linux/' file.txt` | Replacing or substituting string |
+    | `sed 's/unix/linux/2' file.txt` | Replacing the n occurrence of a pattern in a line. The below command replaces the second occurrence of the word “unix” with “linux” in a line.  |
+    | `sed 's/unix/linux/g' file.txt` | Replacing all the occurrence of the pattern in a line |
+    | `sed '3 s/unix/linux/' file.txt` | Replacing string on a specific line number |
+    | `sed '1,3 s/unix/linux/' file.txt` | Replacing string on a range of lines |
+    | `sed '5d' file.txt` | Deleting particular line lines from a particular file |
+    | `sed '$d' file.txt` | Delete a last line |
+    | `sed '3,6d' file.txt` | To Delete line from range x to y |
+    | `sed '12,$d' file.txt` | To Delete from n line to last line |
+    | `sed '/command/d' file.txt` | To Delete pattern matching line |
+    
 
 4. AWK is a scripting language used for manipulating data and generating reports.
 
