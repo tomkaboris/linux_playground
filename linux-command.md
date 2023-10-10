@@ -52,39 +52,31 @@
 
 4. AWK is a scripting language used for manipulating data and generating reports.
 
-    [examples]
-    - Print the lines which match the given pattern.
-    `awk '/Linux/ {print}' file.txt`
-    - Splitting a Line Into Fields, delimited by whitespace character by default.
-    `awk '{print $1,$4}' file.txt`
-    - To print the first item along with the row number(NR) separated with ” – “ from each line in file.txt
-    `awk '{print NR "- " $1 }' file.txt`
-    - To print any non empty line if present
-    `awk 'NF < 0' file.txt`
-    - To find the length of the longest line present in the file
-    `awk '{ if (length($0) > max) max = length($0) } END { print max }' file.txt`
-    - To count the lines in a file
-    `awk 'END { print NR }' file.txt`
-    - Printing lines with more than 10 characters
-    `awk 'length($0) > 10' file.txt`
+    | Example        | Description    |
+    | -------------- | -------------- |
+    | `awk '/Linux/ {print}' file.txt` | Print the lines which match the given pattern. |
+    | `awk '{print $1,$4}' file.txt` | Splitting a Line Into Fields, delimited by whitespace character by default. |
+    | `awk '{print NR "- " $1 }' file.txt` | To print the first item along with the row number(NR) separated with ” – “ from each line in file.txt |
+    | `awk 'NF < 0' file.txt` | To print any non empty line if present |
+    | `awk '{ if (length($0) > max) max = length($0) } END { print max }' file.txt` | To find the length of the longest line present in the file |
+    | `awk 'END { print NR }' file.txt` | To count the lines in a file |
+    | `awk 'length($0) > 10' file.txt` | Printing lines with more than 10 characters |
 
 
 5. TOP command is used to show the Linux processes. It provides a dynamic real-time view of the running system.
 
-    [examples]
-    - With below command top command will automatically exit after 10 number of repetition
-    `top -n 10`
-    - Display specific user process
-    `top -u root`
-    - Send output from top to file or any other programs.
-    `top -b`
-    - Use top in Secure mode.
-    `top -s`
+    | Example        | Description    |
+    | -------------- | -------------- |
+    | `top -n 10` | With below command top command will automatically exit after 10 number of repetition |
+    | `top -u root` | Display specific user process |
+    | `top -b` | Send output from top to file or any other programs. |
+    | `top -s` | Use top in Secure mode. |
     
-    [example-while-top-runing]
-    - Press 'z' option in running top command will display running process in color which may help you to identified running process easily.
-    - Press 'c' option in running top command, it will display absolute path of running process.
-    - You can kill a process after finding PID of process by pressing 'k' option in running top command without exiting from top window as shown below.
-    - Press (Shift+P) to sort processes as per CPU utilization.
-    - Press 'o' and search proces by any parametar that is given in top command.
+    | Example While TOP is running       | Description    |
+    | ----------------------- -| ------------------------ |
+    | z | Press 'z' option in running top command will display running process in color which may help you to identified running process easily. |
+    | c | Press 'c' option in running top command, it will display absolute path of running process. |
+    | k | You can kill a process after finding PID of process by pressing 'k' option in running top command without exiting from top window as shown below. |
+    | Shift+P | Press (Shift+P) to sort processes as per CPU utilization. |
+    | o | Press 'o' and search proces by any parametar that is given in top command. |
 
