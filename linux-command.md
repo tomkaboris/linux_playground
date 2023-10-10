@@ -98,8 +98,9 @@ grep "^Linux" file.txt
 ```bash
 grep "Linux$" file.txt
 ```
-| Specifies expression with -e option, canan use multiple times | 
+| |
 | -------------- |
+| Specifies expression with -e option, canan use multiple times | 
 ```bash
 grep –e "Linux" -e "Unix" -e "Command" file.txt
 ```
