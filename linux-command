@@ -1,112 +1,80 @@
 1. CAT(concatenate) command is very frequently used in Linux. It reads data from the file and gives its content as output.
 
 - To view a single file
-```bash
 cat file.txt
-```
+
 - To view multiple files
-```bash
 cat file1.txt file2.txt
-```
+
 - To view contents of file preceding with line numbers
-```bash
 cat -n file.txt
-```
+
 - Create file and add content
-```bash
 cat > new_file.txt
-```
+
 - Copy the content of one file to another
-```bash
 cat file_one.txt > file_two.txt
-```
+
 - Append content of one file to another
-```bash
 cat file_one.txt >> file_two.txt
-```
+
 - Display content in reverse order
-```bash
 tac file.txt
-```
+
 - Cat command to open dash files
-```bash
 cat -- '-dashfile'
-```
+
 - Cat command to merge multiple files
-```bash
 cat file1.txt file2.txt file3.txt > merged_filename
-```
+
 - Cat command to write on already existing file
-```bash
 cat >> file.txt
-```
+
 
 2. GREP filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern.
 
-| Case insensitive search | 
-| -------------- |
-```bash
+- Case insensitive search
 grep -i "Linux" file.txt
-```
-| Displaying the count of number of matches | 
-| -------------- |
-```bash
+
+- Displaying the count of number of matches
 grep -c "Linux" file.txt
-```
-| Display the file names that matches the pattern | 
-| -------------- |
-```bash
+
+- Display the file names that matches the pattern
 grep -l "Linux" *
-```
-| Checking for the whole words in a file | 
-| -------------- |
-```bash
+
+- Checking for the whole words in a file
 grep -w "Linux" file.txt
-```
-| Displaying only the matched pattern | 
-| -------------- |
-```bash
+
+- Displaying only the matched pattern
 grep -o "Linux" file.txt
-```
-| Show line number while displaying the output | 
-| -------------- |
-```bash
+
+- Show line number while displaying the output
 grep -n "Linux" file.txt
-```
-| Display the lines that are not matched with the specified search string pattern | 
-| -------------- |
-```bash
+
+- Display the lines that are not matched with the specified search string pattern
 grep -v "Linux" file.txt
-```
-| Matching the lines that start with a string | 
-| -------------- |
-```bash
+
+- Matching the lines that start with a string
 grep "^Linux" file.txt
-```
-| Matching the lines that end with a string | 
-| -------------- |
-```bash
+
+- Matching the lines that end with a string
 grep "Linux$" file.txt
-```
+
 | |
 | -------------- |
 | Specifies expression with -e option, canan use multiple times | 
-```bash
 grep –e "Linux" -e "Unix" -e "Command" file.txt
-```
+
 | Print number of specific lines from a file [n lines after result] | 
 | Print number of specific lines from a file [n lines before result] |
 | Print number of specific lines from a file [n lines after and before result] |
-```bash
 grep -A[NumberOfLines(n)] Linux file.txt
 grep -B[NumberOfLines(n)] Linux file.txt
 grep -C[NumberOfLines(n)] Linux file.txt
-```
-| Search recursively for a pattern in the directory | 
-| -------------- |
-```bash
+
+| Search recursively for a pattern in the directory
 grep -R "Linux" file.txt
-```
+
 
 3. SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion.
 
