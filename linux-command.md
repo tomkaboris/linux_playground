@@ -72,8 +72,9 @@
     | `top -b` | Send output from top to file or any other programs. |
     | `top -s` | Use top in Secure mode. |
     
-    | Example While TOP is running       | Description    |
-    | ----------------------- -| ------------------------ |
+
+    | Example While TOP is running | Description    |
+    | ---------------------------- | -------------- |
     | z | Press 'z' option in running top command will display running process in color which may help you to identified running process easily. |
     | c | Press 'c' option in running top command, it will display absolute path of running process. |
     | k | You can kill a process after finding PID of process by pressing 'k' option in running top command without exiting from top window as shown below. |
