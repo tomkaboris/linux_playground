@@ -2,7 +2,8 @@
 
     [example]
 
-    To view a single file
+    | To view a single file |
+    | -------------- |
     ```bash
     cat file.txt
     ```
